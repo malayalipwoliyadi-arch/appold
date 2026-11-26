@@ -1,0 +1,13 @@
+ANDROID LAB PROJECT - COMPATIBILITY
+
+Toolchain configured for a conservative college-lab setup:
+- Android Gradle Plugin: 7.4.2
+- Gradle distribution: 7.5
+- Gradle JDK: 17 (select this in Android Studio: Settings > Build, Execution, Deployment > Build Tools > Gradle)
+- Compile SDK: 33
+- Target SDK: 33
+- Minimum Android version: Android 6.0 (API 23)
+
+The computer must have Android SDK Platform 33 installed. The first Gradle sync needs internet access to download Gradle and AndroidX AppCompat 1.6.1.
+
+IMPORTANT: Android Studio and Gradle are not backward/forward compatible in every combination. This is a conservative baseline, not a guarantee for every unknown installation. The Gradle wrapper properties are included; wrapper launcher scripts/JAR are not included because this build environment has no network access to retrieve the official wrapper JAR. Use Android Studio's Gradle sync with the configured distribution, or generate wrapper launchers from a machine with Gradle 7.5 installed.
